@@ -1,0 +1,21 @@
+/*==========NEWS==========*/
+.news {
+	border-bottom: 1px solid #E2DBD9;
+	padding: 3% 5% 15px 5%;
+}
+h4 {
+	font-weight: bold;
+}
+.news__button {
+	width: 23%;
+	padding: 0 2%;
+	color: #000;
+	text-decoration: none;
+	display: block;
+	width: 100px;
+	height: 30px;
+	background-color: yellow;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 20px;
+}
