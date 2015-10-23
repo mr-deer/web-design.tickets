@@ -8,6 +8,6 @@ deploy:
   bucket: web-design.tickets.mrdeer.net
   skip_cleanup: true
   acl: public_read
-  region: eu-west-2
+  region: eu-central-1
   on:
     repo: mr-deer/web-design.tickets
