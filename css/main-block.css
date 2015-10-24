@@ -10,6 +10,7 @@ body {
 }
 /*==========MAIN BLOCK==========*/
 .main-block-50 {
+	min-height: 270px;
 	position: relative;
 	text-decoration: none;
 	display: block;

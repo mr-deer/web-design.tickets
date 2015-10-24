@@ -28,21 +28,26 @@
 
 }
 
-.form-name {
-	margin-bottom: 15px;
-	font-size: 20px;
+.form-text {
+	margin-bottom: 3%;
+	font-size: 18px;
 	display: block;
 	color: rgba(255,255,255, .51);
+}
+
+.form-name {
+	color: #fff;
+	display: block;
+	font-size: 18px;
 }
 
 .form-input {
   	background-color: #0088ff;
   	border: none;
   	outline: none; /*удаляет рамки*/
-  	font-size: 20px;
-  	padding-top: 10px;
+  	font-size: 18px;
   	color: #fff;
-  	border-bottom: 1px solid #fff;
+  	border-bottom: 2px solid #fff;
 }
 .input-group {
 	margin: 0px 0 20px 0;
@@ -69,3 +74,8 @@
 	left: 15.8%;
 	color: #fff;;
 }
+
+@media screen and (max-width: 320px) {
+	.notification {
+		font-size: 11px;
+	}
