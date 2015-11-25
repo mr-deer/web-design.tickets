@@ -3,12 +3,19 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #f7f9fa;
+}
 header {
     position: relative;
     height: 48px;
     background-color: #eceef2;
-    box-shadow: 0px 6px 0px 0px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .8);
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .8);
+    z-index: 999;
 }
+
+
 .main {
     position: relative;
     background-image: url("imgs/background.png");
@@ -25,33 +32,155 @@ button {
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    position: absolute;
-    top:50%;
-    margin-top: -15px;
     left:50%;
     margin-left: -74px;
     width: 148px;
     height: 30px;
 }
- .leftIcon {
-     position: absolute;
-     left: 6.5%;
-     top: 12px;
-     height: 24px;
-     width:24px;
- }
- .rightIcon {
-     position: absolute;
-     right: 6.5%;
-     top: 12px;
-     height: 24px;
-     width:24px;
- }
 
+.payButtonCenter {
+    position: absolute;
+    top:50%;
+    margin-top: -15px;
+    left:50%;
+    margin-left: -74px;
+}
+
+.buttonBottom {
+    position: absolute;
+    bottom:5.2%;
+}
+.menu {
+
+    position: relative;
+}
+.menu:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+ .icon {
+     display: block;
+     text-decoration: none;
+     margin-top: 12px;
+     height: 24px;
+     width:24px;
+ }
+ .icon:after {
+     content: " ";
+     display: table;
+     clear: both;
+
+ }
+ .left {
+     float: left;
+     margin-left: 6.5%;
+ }
+ .left:after {
+     content: " ";
+     display: table;
+     clear: both;
+
+ }
+ .right {
+     float: right;
+     margin-right: 6.5%;
+ }
+.right:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.menuText {
+    color: rgba(0, 0, 0, 0.502);
+    font-size: 13px;
+    text-decoration: none;
+    float: right;
+    margin:12px 6.5% 0 0;
+}
  .buttonText {
      color: rgba(0, 0, 0, 0.502);
  }
 
 .svgIcon {
     fill: #bdbec2;
+}
+
+.forms {
+    display: block;
+    position: absolute;
+    top:37%;
+    left:26.9%;
+    right:26.9%;
+}
+
+.registrationForms {
+    display: block;
+    position: absolute;
+    top:26.8%;
+    left:26.9%;
+    right:26.9%;
+}
+input {
+    width: calc(100% - 6px);
+    display: block;
+    margin-bottom: 15px;
+    height:30px;
+    background-color: #ffffff;
+    border:none;
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding-left: 6px;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+    padding-left: 6px;
+}
+::-moz-placeholder          {
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+    padding-left: 6px;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+    padding-left: 6px;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+    color: rgba(0, 0, 0, .5);
+    font-size: 13px;
+    padding-left: 6px;
+}
+
+.alerttext {
+    margin-top: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(0,0,0,.5);
+}
+
+.inactiveButton {
+    background-color: #f9f9fb;
+    color: #d1d3d4;
+}
+
+.forgotPasswordForm{
+    position: absolute;
+    top: 27%;
+    left:26.9%;
+    right:26.9%;
+}
+.forgotPasswordText {
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    margin-bottom: 20px;
+    line-height:20px;
 }
